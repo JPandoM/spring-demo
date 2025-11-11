@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "e62c8a44-9369-4c66-8907-75cc116584c6",
+		"name": "PlaygroundController API",
+		"description": "Postman collection for PlaygroundController endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15665080"
+	},
+	"item": [
+		{
+			"name": "Say Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/playground/sayHelloWorld",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"playground",
+						"sayHelloWorld"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Say Something (default)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/playground/saySomething",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"playground",
+						"saySomething"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Say Something (custom param)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/playground/saySomething?something=CustomMessage",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"playground",
+						"saySomething"
+					],
+					"query": [
+						{
+							"key": "something",
+							"value": "CustomMessage"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post With Request Body",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"This is a sample body\""
+				},
+				"url": {
+					"raw": "{{baseURL}}/playground/postWithRequestBody",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"playground",
+						"postWithRequestBody"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

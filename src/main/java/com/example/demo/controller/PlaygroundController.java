@@ -17,8 +17,8 @@ public class PlaygroundController {
 	}
 	
 	@GetMapping("/saySomething")
-	public String saySomething(@RequestParam(defaultValue = "Hello World! By default!") String sentence) {
-		return sentence;
+	public String saySomething(@RequestParam(defaultValue = "something") String something) {
+		return "Saying: " + something;
 	}
 	
 	@PostMapping("/postWithRequestBody")
