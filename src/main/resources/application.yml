@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: demo
+  profiles:
+    active: uat
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+server:
+  port: 8080
+
+default:
+  word: something
+  configuration:
+    first: This is a default configuration value retrieved from application.yml instead of .properties using a configuration helper. 
+    second: ConfigurationHelper.java uses @Component and @ConfigurationProperties to do so.
+    third: Component tag lets Spring know is needed in app context, enables dependency injection and removes boilerplate config.
+    fourth: ConfigurationProperties tag binds the properties with the prefix "default.configuration" to the fields in ConfigurationHelper.java.
+---
+spring:
+  config:
+    activate:
+      on-profile: uat
+
+server:
+  port: 9090
+
+default:
+  word: something on UAT
+  configuration:
+    first: This is a default configuration value retrieved from application.yml instead of .properties using a configuration helper. On UAT profile.
+    second: ConfigurationHelper.java uses @Component and @ConfigurationProperties to do so. On UAT profile.
+    third: Component tag lets Spring know is needed in app context, enables dependency injection and removes boilerplate config. On UAT profile.
+    fourth: ConfigurationProperties tag binds the properties with the prefix "default.configuration" to the fields in ConfigurationHelper.java. On UAT profile.
