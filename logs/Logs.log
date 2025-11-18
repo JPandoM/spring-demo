@@ -788,3 +788,675 @@ Caused by: org.hibernate.DuplicateMappingException: Entity classes [com.example.
 2025-11-18 12:38:55,897 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-11-18 12:38:55,902 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
 2025-11-18 12:38:55,905 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-11-18 17:27:54,102 INFO com.example.demo.controller.ActuatorControllerIT [main] Starting ActuatorControllerIT using Java 21.0.8 with PID 18076 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:27:54,103 INFO com.example.demo.controller.ActuatorControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:27:54,120 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@fca387
+2025-11-18 17:27:55,289 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:27:55,348 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-11-18 17:27:55,866 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:27:55,948 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-18 17:27:55,997 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:27:56,348 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:27:56,386 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-11-18 17:27:56,563 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:27:56,565 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-11-18 17:27:56,626 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:27:57,315 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:27:57,343 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:27:57,816 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:27:57,944 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:27:58,145 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:27:58,329 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:27:58,558 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:27:58,609 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:27:58,737 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:27:58,792 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:27:58,793 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:27:58,793 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:27:58,793 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 0 ms
+2025-11-18 17:27:58,855 INFO com.example.demo.controller.ActuatorControllerIT [main] Started ActuatorControllerIT in 5.295 seconds (process running for 7.729)
+2025-11-18 17:27:59,575 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "application/octet-stream" to []
+2025-11-18 17:27:59,592 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-11-18 17:27:59,612 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [org.springframework.boot.actuate.health.SystemHealth@61fb3dae]
+2025-11-18 17:27:59,638 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.ActuatorController#customEndpoint()
+2025-11-18 17:27:59,639 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:27:59,640 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a custom actuator endpoint."]
+2025-11-18 17:27:59,647 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.LoginControllerIT]: LoginControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:27:59,651 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.LoginControllerIT
+2025-11-18 17:27:59,654 INFO org.springframework.boot.devtools.restart.RestartApplicationListener [main] Restart disabled due to context in which it is running
+2025-11-18 17:27:59,672 INFO com.example.demo.controller.LoginControllerIT [main] Starting LoginControllerIT using Java 21.0.8 with PID 18076 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:27:59,672 INFO com.example.demo.controller.LoginControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:27:59,674 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@50be5d6f
+2025-11-18 17:27:59,875 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:27:59,884 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-11-18 17:27:59,943 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:27:59,945 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:27:59,949 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:27:59,950 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Starting...
+2025-11-18 17:27:59,951 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:27:59,951 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Start completed.
+2025-11-18 17:27:59,952 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:27:59,965 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:27:59,968 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:28:00,228 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:28:00,294 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:28:00,413 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:28:00,554 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:28:00,621 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:28:00,629 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:28:00,673 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:28:00,686 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:28:00,686 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:28:00,686 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:28:00,687 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:28:00,714 INFO com.example.demo.controller.LoginControllerIT [main] Started LoginControllerIT in 1.061 seconds (process running for 9.589)
+2025-11-18 17:28:00,762 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:28:01,034 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:28:01,034 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:28:01,186 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:28:01,190 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:28:01,192 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:28:01,192 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:28:01,258 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:28:01,335 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: playground-user
+2025-11-18 17:28:01,345 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-11-18 17:28:01,347 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Resource not found
+2025-11-18 17:28:01,351 DEBUG org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [main] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource playground.]
+2025-11-18 17:28:01,430 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:28:01,526 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:28:01,585 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:28:01,642 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:28:01,642 ERROR com.example.demo.security.CustomAuthenticationFailureHandler [main] User test-user has reached maximum number of failed login attempts (3). Shutting down application.
+2025-11-18 17:28:01,713 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: user. Reason: Bad credentials
+2025-11-18 17:28:01,805 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.PlaygroundControllerIT]: PlaygroundControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:28:01,809 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.PlaygroundControllerIT
+2025-11-18 17:28:01,870 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@fca387, started on Tue Nov 18 17:27:54 CET 2025
+2025-11-18 17:28:01,878 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:28:01,881 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-11-18 17:28:01,884 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-11-18 17:28:01,886 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@50be5d6f, started on Tue Nov 18 17:27:59 CET 2025
+2025-11-18 17:28:01,894 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:28:01,894 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2025-11-18 17:28:01,896 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2025-11-18 17:31:04,302 INFO com.example.demo.controller.ActuatorControllerIT [main] Starting ActuatorControllerIT using Java 21.0.8 with PID 3532 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:31:04,303 INFO com.example.demo.controller.ActuatorControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:31:04,315 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@9d7ccfe
+2025-11-18 17:31:05,157 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:31:05,211 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 42 ms. Found 1 JPA repository interface.
+2025-11-18 17:31:05,686 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:31:05,739 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-18 17:31:05,765 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:31:06,060 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:31:06,092 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-11-18 17:31:06,202 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:31:06,204 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-11-18 17:31:06,245 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:31:06,771 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:31:06,793 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:31:07,207 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:31:07,339 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:31:07,533 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:31:07,706 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:31:07,913 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:31:07,951 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:31:08,097 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:31:08,157 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:31:08,158 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:31:08,158 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:31:08,160 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:31:08,218 INFO com.example.demo.controller.ActuatorControllerIT [main] Started ActuatorControllerIT in 4.315 seconds (process running for 6.516)
+2025-11-18 17:31:08,798 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "application/octet-stream" to []
+2025-11-18 17:31:08,816 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-11-18 17:31:08,837 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [org.springframework.boot.actuate.health.SystemHealth@68f67bbd]
+2025-11-18 17:31:08,869 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.ActuatorController#customEndpoint()
+2025-11-18 17:31:08,871 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:31:08,872 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a custom actuator endpoint."]
+2025-11-18 17:31:08,880 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.LoginControllerIT]: LoginControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:31:08,885 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.LoginControllerIT
+2025-11-18 17:31:08,888 INFO org.springframework.boot.devtools.restart.RestartApplicationListener [main] Restart disabled due to context in which it is running
+2025-11-18 17:31:08,907 INFO com.example.demo.controller.LoginControllerIT [main] Starting LoginControllerIT using Java 21.0.8 with PID 3532 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:31:08,907 INFO com.example.demo.controller.LoginControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:31:08,909 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4fc28b23
+2025-11-18 17:31:09,110 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:31:09,120 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-11-18 17:31:09,189 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:31:09,191 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:31:09,198 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:31:09,199 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Starting...
+2025-11-18 17:31:09,200 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:31:09,200 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Start completed.
+2025-11-18 17:31:09,200 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:31:09,220 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:31:09,223 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:31:09,543 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:31:09,616 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:31:09,727 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:31:09,871 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:31:09,944 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:31:09,958 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:31:10,007 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:31:10,020 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:31:10,021 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:31:10,021 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:31:10,023 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 2 ms
+2025-11-18 17:31:10,060 INFO com.example.demo.controller.LoginControllerIT [main] Started LoginControllerIT in 1.173 seconds (process running for 8.357)
+2025-11-18 17:31:10,119 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:31:10,373 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:31:10,373 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:31:10,532 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:31:10,535 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:31:10,537 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:31:10,537 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:31:10,603 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:31:10,691 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: playground-user
+2025-11-18 17:31:10,701 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-11-18 17:31:10,703 DEBUG org.springframework.web.servlet.resource.ResourceHttpRequestHandler [main] Resource not found
+2025-11-18 17:31:10,706 DEBUG org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [main] Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource playground.]
+2025-11-18 17:31:10,778 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:31:10,868 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:31:10,931 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:31:10,989 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:31:10,989 ERROR com.example.demo.security.CustomAuthenticationFailureHandler [main] User test-user has reached maximum number of failed login attempts (3). Shutting down application.
+2025-11-18 17:31:11,059 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: user. Reason: Bad credentials
+2025-11-18 17:31:11,147 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.PlaygroundControllerIT]: PlaygroundControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:31:11,152 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.PlaygroundControllerIT
+2025-11-18 17:31:11,204 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@9d7ccfe, started on Tue Nov 18 17:31:04 CET 2025
+2025-11-18 17:31:11,209 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:31:11,212 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-11-18 17:31:11,215 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-11-18 17:31:11,215 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@4fc28b23, started on Tue Nov 18 17:31:08 CET 2025
+2025-11-18 17:31:11,218 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:31:11,219 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2025-11-18 17:31:11,220 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2025-11-18 17:34:33,371 INFO com.example.demo.controller.ActuatorControllerIT [main] Starting ActuatorControllerIT using Java 21.0.8 with PID 19280 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:34:33,372 INFO com.example.demo.controller.ActuatorControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:34:33,385 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5ae95707
+2025-11-18 17:34:34,433 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:34:34,491 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-11-18 17:34:34,970 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:34:35,032 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-18 17:34:35,072 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:34:35,359 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:34:35,397 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-11-18 17:34:35,514 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:34:35,516 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-11-18 17:34:35,567 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:34:36,151 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:34:36,176 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:34:36,604 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:34:36,722 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:34:36,944 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:34:37,116 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:34:37,351 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:34:37,384 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:34:37,512 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:34:37,558 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:34:37,559 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:34:37,559 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:34:37,560 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:34:37,625 INFO com.example.demo.controller.ActuatorControllerIT [main] Started ActuatorControllerIT in 4.745 seconds (process running for 7.33)
+2025-11-18 17:34:38,425 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "application/octet-stream" to []
+2025-11-18 17:34:38,448 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-11-18 17:34:38,479 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [org.springframework.boot.actuate.health.SystemHealth@65c040c9]
+2025-11-18 17:34:38,522 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.ActuatorController#customEndpoint()
+2025-11-18 17:34:38,524 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:34:38,524 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a custom actuator endpoint."]
+2025-11-18 17:34:38,534 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.LoginControllerIT]: LoginControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:34:38,539 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.LoginControllerIT
+2025-11-18 17:34:38,542 INFO org.springframework.boot.devtools.restart.RestartApplicationListener [main] Restart disabled due to context in which it is running
+2025-11-18 17:34:38,569 INFO com.example.demo.controller.LoginControllerIT [main] Starting LoginControllerIT using Java 21.0.8 with PID 19280 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:34:38,570 INFO com.example.demo.controller.LoginControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:34:38,572 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@31881213
+2025-11-18 17:34:38,785 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:34:38,795 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-11-18 17:34:38,863 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:34:38,865 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:34:38,872 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:34:38,873 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Starting...
+2025-11-18 17:34:38,887 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:34:38,887 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Start completed.
+2025-11-18 17:34:38,889 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:34:38,909 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:34:38,912 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:34:39,192 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:34:39,257 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:34:39,399 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:34:39,536 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:34:39,615 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:34:39,627 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:34:39,676 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:34:39,690 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:34:39,690 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:34:39,690 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:34:39,691 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:34:39,717 INFO com.example.demo.controller.LoginControllerIT [main] Started LoginControllerIT in 1.175 seconds (process running for 9.422)
+2025-11-18 17:34:39,767 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:34:40,063 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:34:40,063 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:34:40,209 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:34:40,213 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:34:40,215 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:34:40,215 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:34:40,287 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:34:40,370 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: playground-user
+2025-11-18 17:34:40,379 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#sayHelloWorld()
+2025-11-18 17:34:40,380 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:34:40,380 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Hello World!"]
+2025-11-18 17:34:40,445 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:34:40,537 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:34:40,595 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:34:40,654 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:34:40,654 ERROR com.example.demo.security.CustomAuthenticationFailureHandler [main] User test-user has reached maximum number of failed login attempts (3). Shutting down application.
+2025-11-18 17:34:40,727 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: user. Reason: Bad credentials
+2025-11-18 17:34:40,834 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.PlaygroundControllerIT]: PlaygroundControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:34:40,838 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.PlaygroundControllerIT
+2025-11-18 17:34:40,923 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@5ae95707, started on Tue Nov 18 17:34:33 CET 2025
+2025-11-18 17:34:40,932 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:34:40,935 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-11-18 17:34:40,939 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-11-18 17:34:40,940 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@31881213, started on Tue Nov 18 17:34:38 CET 2025
+2025-11-18 17:34:40,946 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:34:40,947 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2025-11-18 17:34:40,950 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2025-11-18 17:37:50,451 INFO com.example.demo.controller.ActuatorControllerIT [main] Starting ActuatorControllerIT using Java 21.0.8 with PID 28608 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:37:50,452 INFO com.example.demo.controller.ActuatorControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:37:50,462 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4bbb49b0
+2025-11-18 17:37:51,238 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:37:51,299 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 50 ms. Found 1 JPA repository interface.
+2025-11-18 17:37:51,773 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:37:51,830 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-18 17:37:51,874 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:37:52,176 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:37:52,198 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-11-18 17:37:52,323 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:37:52,325 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-11-18 17:37:52,378 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:37:52,991 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:37:53,013 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:37:53,458 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:37:53,604 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:37:53,786 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:37:53,973 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:37:54,202 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:37:54,242 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:37:54,369 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:37:54,417 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:37:54,418 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:37:54,418 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:37:54,419 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:37:54,479 INFO com.example.demo.controller.ActuatorControllerIT [main] Started ActuatorControllerIT in 4.435 seconds (process running for 6.692)
+2025-11-18 17:37:55,072 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "application/octet-stream" to []
+2025-11-18 17:37:55,088 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-11-18 17:37:55,107 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [org.springframework.boot.actuate.health.SystemHealth@333813e7]
+2025-11-18 17:37:55,136 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.ActuatorController#customEndpoint()
+2025-11-18 17:37:55,137 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:37:55,137 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a custom actuator endpoint."]
+2025-11-18 17:37:55,146 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.LoginControllerIT]: LoginControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:37:55,150 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.LoginControllerIT
+2025-11-18 17:37:55,154 INFO org.springframework.boot.devtools.restart.RestartApplicationListener [main] Restart disabled due to context in which it is running
+2025-11-18 17:37:55,180 INFO com.example.demo.controller.LoginControllerIT [main] Starting LoginControllerIT using Java 21.0.8 with PID 28608 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:37:55,180 INFO com.example.demo.controller.LoginControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:37:55,182 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3514ea20
+2025-11-18 17:37:55,404 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:37:55,414 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-11-18 17:37:55,467 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:37:55,468 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:37:55,475 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:37:55,475 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Starting...
+2025-11-18 17:37:55,476 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:37:55,476 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Start completed.
+2025-11-18 17:37:55,477 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:37:55,502 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:37:55,505 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:37:55,802 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:37:55,860 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:37:55,977 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:37:56,104 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:37:56,177 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:37:56,188 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:37:56,233 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:37:56,252 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:37:56,252 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:37:56,252 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:37:56,253 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:37:56,276 INFO com.example.demo.controller.LoginControllerIT [main] Started LoginControllerIT in 1.122 seconds (process running for 8.489)
+2025-11-18 17:37:56,328 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:37:56,584 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:37:56,585 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:37:56,723 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:37:56,726 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:37:56,728 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:37:56,728 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:37:56,793 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:37:56,873 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: playground-user
+2025-11-18 17:37:56,879 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#sayHelloWorld()
+2025-11-18 17:37:56,880 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:37:56,880 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Hello World!"]
+2025-11-18 17:37:56,946 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:37:57,043 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:37:57,101 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:37:57,157 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:37:57,158 ERROR com.example.demo.security.CustomAuthenticationFailureHandler [main] User test-user has reached maximum number of failed login attempts (3). Shutting down application.
+2025-11-18 17:37:57,238 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: user. Reason: Bad credentials
+2025-11-18 17:37:57,340 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.PlaygroundControllerIT]: PlaygroundControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:37:57,344 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.PlaygroundControllerIT
+2025-11-18 17:37:57,351 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#sayHelloWorld()
+2025-11-18 17:37:57,351 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:37:57,351 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Hello World!"]
+2025-11-18 17:37:57,363 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#postWithRequestBody(String)
+2025-11-18 17:37:57,365 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "text/plain;charset=UTF-8" to ["test body"]
+2025-11-18 17:37:57,367 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:37:57,368 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["You've sent this body: test body"]
+2025-11-18 17:37:57,380 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#saySomething(String)
+2025-11-18 17:37:57,382 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:37:57,382 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Saying: something"]
+2025-11-18 17:37:57,391 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#saySomething(String)
+2025-11-18 17:37:57,396 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:37:57,397 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Saying: CustomMessage"]
+2025-11-18 17:37:57,403 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#getConfigurationSentences()
+2025-11-18 17:37:57,404 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:37:57,404 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a default configuration value retrieved from application.yml instead of .properties using a  (truncated)..."]
+2025-11-18 17:37:57,411 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@4bbb49b0, started on Tue Nov 18 17:37:50 CET 2025
+2025-11-18 17:37:57,415 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:37:57,417 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-11-18 17:37:57,419 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-11-18 17:37:57,421 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@3514ea20, started on Tue Nov 18 17:37:55 CET 2025
+2025-11-18 17:37:57,424 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:37:57,425 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2025-11-18 17:37:57,427 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2025-11-18 17:58:24,949 INFO com.example.demo.controller.ActuatorControllerIT [main] Starting ActuatorControllerIT using Java 21.0.8 with PID 27420 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:58:24,950 INFO com.example.demo.controller.ActuatorControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:58:24,965 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@160e99e0
+2025-11-18 17:58:25,900 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:58:25,990 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 74 ms. Found 1 JPA repository interface.
+2025-11-18 17:58:26,714 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:58:26,769 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-18 17:58:26,810 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:58:26,942 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:58:26,974 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-11-18 17:58:27,132 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:58:27,133 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-11-18 17:58:27,205 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:58:27,914 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:58:27,954 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:58:28,481 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:58:28,615 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:58:28,816 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:58:28,990 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:58:29,256 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:58:29,300 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:58:29,441 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:58:29,497 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:58:29,498 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:58:29,498 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:58:29,499 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:58:29,552 INFO com.example.demo.controller.ActuatorControllerIT [main] Started ActuatorControllerIT in 5.063 seconds (process running for 7.622)
+2025-11-18 17:58:29,726 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "application/octet-stream" to []
+2025-11-18 17:58:29,749 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-11-18 17:58:29,771 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [org.springframework.boot.actuate.health.SystemHealth@3e6f3ad5]
+2025-11-18 17:58:29,802 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.ActuatorController#customEndpoint()
+2025-11-18 17:58:29,806 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:58:29,807 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a custom actuator endpoint."]
+2025-11-18 17:58:29,819 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.LoginControllerIT]: LoginControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:58:29,825 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.LoginControllerIT
+2025-11-18 17:58:29,836 INFO org.springframework.boot.devtools.restart.RestartApplicationListener [main] Restart disabled due to context in which it is running
+2025-11-18 17:58:29,892 INFO com.example.demo.controller.LoginControllerIT [main] Starting LoginControllerIT using Java 21.0.8 with PID 27420 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:58:29,892 INFO com.example.demo.controller.LoginControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:58:29,895 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4a81582c
+2025-11-18 17:58:30,116 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:58:30,129 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interface.
+2025-11-18 17:58:30,202 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:58:30,204 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:58:30,212 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:58:30,213 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Starting...
+2025-11-18 17:58:30,214 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:58:30,214 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Start completed.
+2025-11-18 17:58:30,215 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:58:30,246 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:58:30,249 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:58:30,307 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:58:30,325 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:58:30,425 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:58:30,546 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:58:30,573 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:58:30,576 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:58:30,596 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:58:30,601 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:58:30,601 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:58:30,601 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:58:30,602 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:58:30,613 INFO com.example.demo.controller.LoginControllerIT [main] Started LoginControllerIT in 0.776 seconds (process running for 8.682)
+2025-11-18 17:58:30,629 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:58:30,817 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:58:30,818 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:58:31,009 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:58:31,013 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:58:31,015 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:58:31,016 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:58:31,077 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:58:31,153 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: playground-user
+2025-11-18 17:58:31,158 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#sayHelloWorld()
+2025-11-18 17:58:31,159 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:58:31,159 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Hello World!"]
+2025-11-18 17:58:31,256 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:58:31,331 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:58:31,393 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:58:31,445 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:58:31,445 ERROR com.example.demo.security.CustomAuthenticationFailureHandler [main] User test-user has reached maximum number of failed login attempts (3). Shutting down application.
+2025-11-18 17:58:31,528 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: user. Reason: Bad credentials
+2025-11-18 17:58:31,637 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.PlaygroundControllerIT]: PlaygroundControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:58:31,640 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.PlaygroundControllerIT
+2025-11-18 17:58:31,659 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#sayHelloWorld()
+2025-11-18 17:58:31,659 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:58:31,660 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Hello World!"]
+2025-11-18 17:58:31,679 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#postWithRequestBody(String)
+2025-11-18 17:58:31,681 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "text/plain;charset=UTF-8" to ["test body"]
+2025-11-18 17:58:31,682 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:58:31,682 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["You've sent this body: test body"]
+2025-11-18 17:58:31,691 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#saySomething(String)
+2025-11-18 17:58:31,693 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:58:31,693 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Saying: something"]
+2025-11-18 17:58:31,702 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#saySomething(String)
+2025-11-18 17:58:31,706 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:58:31,706 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Saying: CustomMessage"]
+2025-11-18 17:58:31,713 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#getConfigurationSentences()
+2025-11-18 17:58:31,714 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:58:31,714 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a default configuration value retrieved from application.yml instead of .properties using a  (truncated)..."]
+2025-11-18 17:58:31,722 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@160e99e0, started on Tue Nov 18 17:58:24 CET 2025
+2025-11-18 17:58:31,728 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:58:31,730 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-11-18 17:58:31,732 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-11-18 17:58:31,733 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@4a81582c, started on Tue Nov 18 17:58:29 CET 2025
+2025-11-18 17:58:31,736 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:58:31,738 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2025-11-18 17:58:31,742 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
+2025-11-18 17:59:36,565 INFO com.example.demo.controller.ActuatorControllerIT [main] Starting ActuatorControllerIT using Java 21.0.8 with PID 12464 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:59:36,567 INFO com.example.demo.controller.ActuatorControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:59:36,576 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@787e4357
+2025-11-18 17:59:37,471 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:59:37,545 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interface.
+2025-11-18 17:59:38,058 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:59:38,100 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.6.33.Final
+2025-11-18 17:59:38,133 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:59:38,240 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:59:38,262 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2025-11-18 17:59:38,404 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:59:38,404 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2025-11-18 17:59:38,445 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:59:38,976 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:59:39,000 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:59:39,454 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:59:39,626 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:59:39,856 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:59:40,042 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:59:40,330 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:59:40,387 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:59:40,577 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:59:40,633 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:59:40,636 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:59:40,636 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:59:40,637 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:59:40,707 INFO com.example.demo.controller.ActuatorControllerIT [main] Started ActuatorControllerIT in 4.586 seconds (process running for 6.691)
+2025-11-18 17:59:40,859 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "application/octet-stream" to []
+2025-11-18 17:59:40,879 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/vnd.spring-boot.actuator.v3+json', given [*/*] and supported [application/vnd.spring-boot.actuator.v3+json, application/vnd.spring-boot.actuator.v2+json, application/json]
+2025-11-18 17:59:40,903 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [org.springframework.boot.actuate.health.SystemHealth@616549c]
+2025-11-18 17:59:40,933 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.ActuatorController#customEndpoint()
+2025-11-18 17:59:40,936 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:59:40,936 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a custom actuator endpoint."]
+2025-11-18 17:59:40,944 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.LoginControllerIT]: LoginControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:59:40,946 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.LoginControllerIT
+2025-11-18 17:59:40,952 INFO org.springframework.boot.devtools.restart.RestartApplicationListener [main] Restart disabled due to context in which it is running
+2025-11-18 17:59:40,973 INFO com.example.demo.controller.LoginControllerIT [main] Starting LoginControllerIT using Java 21.0.8 with PID 12464 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 17:59:40,973 INFO com.example.demo.controller.LoginControllerIT [main] The following 1 profile is active: "dev"
+2025-11-18 17:59:40,974 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2dad7323
+2025-11-18 17:59:41,217 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-18 17:59:41,229 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-11-18 17:59:41,295 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-18 17:59:41,296 INFO org.hibernate.cache.internal.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-11-18 17:59:41,307 INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-18 17:59:41,309 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Starting...
+2025-11-18 17:59:41,309 INFO com.zaxxer.hikari.pool.HikariPool [main] HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-11-18 17:59:41,309 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-2 - Start completed.
+2025-11-18 17:59:41,310 INFO org.hibernate.orm.connections.pooling [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-18 17:59:41,325 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-18 17:59:41,328 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:59:41,409 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 13 mappings in 'requestMappingHandlerMapping'
+2025-11-18 17:59:41,430 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 17:59:41,480 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 13 endpoints beneath base path '/actuator'
+2025-11-18 17:59:41,604 INFO org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-11-18 17:59:41,640 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 17:59:41,647 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 17:59:41,676 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-11-18 17:59:41,682 DEBUG org.springframework.web.filter.ServerHttpObservationFilter [main] Filter 'webMvcObservationFilter' configured for use
+2025-11-18 17:59:41,682 INFO org.springframework.boot.test.mock.web.SpringBootMockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2025-11-18 17:59:41,682 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Initializing Servlet ''
+2025-11-18 17:59:41,683 INFO org.springframework.test.web.servlet.TestDispatcherServlet [main] Completed initialization in 1 ms
+2025-11-18 17:59:41,698 INFO com.example.demo.controller.LoginControllerIT [main] Started LoginControllerIT in 0.746 seconds (process running for 7.682)
+2025-11-18 17:59:41,720 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:59:41,864 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:59:41,865 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:59:42,000 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:59:42,005 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.BookController#getAllBooks()
+2025-11-18 17:59:42,006 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-11-18 17:59:42,007 DEBUG org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor [main] Writing [[]]
+2025-11-18 17:59:42,068 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:59:42,142 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: playground-user
+2025-11-18 17:59:42,147 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#sayHelloWorld()
+2025-11-18 17:59:42,148 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:59:42,148 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Hello World!"]
+2025-11-18 17:59:42,207 INFO com.example.demo.security.CustomAuthenticationSuccessHandler [main] Successful authentication for user: book-user
+2025-11-18 17:59:42,285 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:59:42,344 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:59:42,401 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: test-user. Reason: Bad credentials
+2025-11-18 17:59:42,401 ERROR com.example.demo.security.CustomAuthenticationFailureHandler [main] User test-user has reached maximum number of failed login attempts (3). Shutting down application.
+2025-11-18 17:59:42,459 WARN com.example.demo.security.CustomAuthenticationFailureHandler [main] Authentication failed for user: user. Reason: Bad credentials
+2025-11-18 17:59:42,525 INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.example.demo.controller.PlaygroundControllerIT]: PlaygroundControllerIT does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-11-18 17:59:42,527 INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.example.demo.DemoApplication for test class com.example.demo.controller.PlaygroundControllerIT
+2025-11-18 17:59:42,536 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#sayHelloWorld()
+2025-11-18 17:59:42,538 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:59:42,538 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Hello World!"]
+2025-11-18 17:59:42,548 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#postWithRequestBody(String)
+2025-11-18 17:59:42,549 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Read "text/plain;charset=UTF-8" to ["test body"]
+2025-11-18 17:59:42,551 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:59:42,551 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["You've sent this body: test body"]
+2025-11-18 17:59:42,559 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#saySomething(String)
+2025-11-18 17:59:42,562 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:59:42,563 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Saying: something"]
+2025-11-18 17:59:42,571 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#saySomething(String)
+2025-11-18 17:59:42,577 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:59:42,577 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["Saying: CustomMessage"]
+2025-11-18 17:59:42,586 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] Mapped to com.example.demo.controller.PlaygroundController#getConfigurationSentences()
+2025-11-18 17:59:42,587 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-11-18 17:59:42,587 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor [main] Writing ["This is a default configuration value retrieved from application.yml instead of .properties using a  (truncated)..."]
+2025-11-18 17:59:42,594 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@787e4357, started on Tue Nov 18 17:59:36 CET 2025
+2025-11-18 17:59:42,602 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:59:42,606 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2025-11-18 17:59:42,609 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2025-11-18 17:59:42,610 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@2dad7323, started on Tue Nov 18 17:59:40 CET 2025
+2025-11-18 17:59:42,613 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-11-18 17:59:42,618 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown initiated...
+2025-11-18 17:59:42,621 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-2 - Shutdown completed.
