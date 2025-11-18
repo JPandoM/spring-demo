@@ -1,0 +1,245 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-4a3b-8c2d-1e9f8a7b6c5d",
+		"name": "Demo Application API",
+		"description": "Postman collection for the Demo Spring Boot application, covering all controllers.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Playground",
+			"description": "Endpoints from the PlaygroundController",
+			"item": [
+				{
+					"name": "Say Hello World",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/playground/sayHelloWorld",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"playground",
+								"sayHelloWorld"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Say Something (Default)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/playground/saySomething",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"playground",
+								"saySomething"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Say Something (Custom)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/playground/saySomething?something=HelloPostman",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"playground",
+								"saySomething"
+							],
+							"query": [
+								{
+									"key": "something",
+									"value": "HelloPostman"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Configuration Sentences",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/playground/getConfigurationSentences",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"playground",
+								"getConfigurationSentences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post with Request Body",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "text/plain"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "This is a sample text body."
+						},
+						"url": {
+							"raw": "{{baseURL}}/playground/postWithRequestBody",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"playground",
+								"postWithRequestBody"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Books",
+			"description": "Endpoints from the BookController for CRUD operations.",
+			"item": [
+				{
+					"name": "Get All Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/books",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/books/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"The Hobbit\",\n    \"author\": \"J.R.R. Tolkien\",\n    \"nPages\": 310,\n    \"nChapters\": 19\n}"
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/books",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"title\": \"The Hobbit: An Unexpected Journey\",\n    \"author\": \"J.R.R. Tolkien\",\n    \"nPages\": 320,\n    \"nChapters\": 19\n}"
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/books/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/api/books/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://localhost:8080",
+			"type": "default"
+		}
+	]
+}
