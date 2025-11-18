@@ -42,10 +42,11 @@ class PlaygroundControllerIT {
 
     @Test
     void getConfigurationSentences() throws Exception {
-        String expectedResponse = "This is a default configuration value retrieved from application.yml instead of .properties using a configuration helper. \n" +
-                "ConfigurationHelper.java uses @Component and @ConfigurationProperties to do so.\n" +
-                "Component tag lets Spring know is needed in app context, enables dependency injection and removes boilerplate config.\n" +
-                "ConfigurationProperties tag binds the properties with the prefix \"default.configuration\" to the fields in ConfigurationHelper.java.";
+        String expectedResponse = """
+                This is a default configuration value retrieved from application.yml instead of .properties using a configuration helper.
+                ConfigurationHelper.java uses @Component and @ConfigurationProperties to do so.
+                Component tag lets Spring know is needed in app context, enables dependency injection and removes boilerplate config.
+                ConfigurationProperties tag binds the properties with the prefix "default.configuration" to the fields in ConfigurationHelper.java.""";
         
         mockMvc.perform(get("/playground/getConfigurationSentences"))
                 .andExpect(status().isOk())
