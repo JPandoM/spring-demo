@@ -1,0 +1,9 @@
+2025-11-18 10:31:43,211 INFO com.example.demo.DemoApplicationTests [main] Starting DemoApplicationTests using Java 21.0.8 with PID 22932 (started by jepy in C:\Users\jepy\repos\spring-demo)
+2025-11-18 10:31:43,213 INFO com.example.demo.DemoApplicationTests [main] The following 1 profile is active: "uat"
+2025-11-18 10:31:43,293 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [main] Refreshing org.springframework.web.context.support.GenericWebApplicationContext@2301b75
+2025-11-18 10:31:44,558 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping [main] 6 mappings in 'requestMappingHandlerMapping'
+2025-11-18 10:31:44,699 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-11-18 10:31:44,748 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-18 10:31:44,804 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-18 10:31:44,900 INFO com.example.demo.DemoApplicationTests [main] Started DemoApplicationTests in 2.377 seconds (process running for 3.616)
+2025-11-18 10:31:45,759 DEBUG org.springframework.web.context.support.GenericWebApplicationContext [SpringApplicationShutdownHook] Closing org.springframework.web.context.support.GenericWebApplicationContext@2301b75, started on Tue Nov 18 10:31:43 CET 2025
